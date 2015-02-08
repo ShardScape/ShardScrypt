@@ -2805,11 +2805,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-<<<<<<< HEAD
         assert(block.hashMerkleRoot == uint256("0x2c8dbd08af8a0c374a4738ec0320ada6f6305ffcad4cd13c5a87502a36d13580"));
-=======
-        assert(block.hashMerkleRoot == uint256("0x"));
->>>>>>> origin/master
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -4800,6 +4796,10 @@ public:
         mapOrphanBlocks.clear();
 
         // orphan transactions
+        mapOrphanTransactions.clear();
+    }
+} instance_of_cmaincleanup;
+  // orphan transactions
         mapOrphanTransactions.clear();
     }
 } instance_of_cmaincleanup;
